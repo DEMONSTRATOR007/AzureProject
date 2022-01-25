@@ -1,12 +1,16 @@
 click==8.0.3
 colorama==0.4.4
 Flask==2.0.2
+Flask-SQLAlchemy==2.5.1
+greenlet==1.1.2
 itsdangerous==2.0.1
 Jinja2==3.0.3
 joblib==1.1.0
 MarkupSafe==2.0.1
 nltk==3.6.7
+pyodbc==4.0.32
 regex==2022.1.18
+SQLAlchemy==1.4.31
 textblob==0.17.1
 tqdm==4.62.3
 Werkzeug==2.0.2

@@ -40,69 +40,46 @@
             </nav>
             <div class="text-box">
                 <h1>GREEN HEALTHCARE <br> Hospital Appointment</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure harum alias minima, veritatis animi quaerat temporibus nihil error, ad, reprehenderit iste vero nam. Sit ducimus soluta repellat optio omnis?</p>
-            <a href="" class="Hospital-btn1"></a>
+                
             </div>
         </section>
-    <section class="Infratructure">
-        <h1>Appointment</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, cupiditate!
-        </p>
-
+    <section class="Infratructure2">
+        <h1>Appointments</h1>
         <div class="row">
-            <div class="Infratructure-col">
-                <a href="{{url_for('HealthCheckUpForm')}}"><img class="Infratructure-img" src="../static/Images/important-documents.jpg" alt="HealthCheckUpForm">
+            <div class="Infratructure2-col">
+                <a href="{{url_for('HealthCheckUpForm')}}"><img class="Infratructure2-img" src="../static/Images/important-documents.jpg" alt="HealthCheckUpForm">
                 <div class="layer">
                     <h3>Health Check-Up</h3>
                  </div> 
                 </a>           
             </div>
-            <div class="Infratructure-col">
-                <a href="{{url_for('BloodTestForm')}}"><img class="Infratructure-img" src="../static/Images/analysis-g4dc3ccdf0_1280.jpg" alt="BloodTestForm">
+            <div class="Infratructure2-col">
+                <a href="{{url_for('BloodTestForm')}}"><img class="Infratructure2-img" src="../static/Images/analysis-g4dc3ccdf0_1280.jpg" alt="BloodTestForm">
                 <div class="layer">
                     <h3>Blood Test</h3>
                  </div> 
                 </a>           
             </div>
-            
         </div>
-
-
     </section>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+
+
+    </script>
 
     
-        
-        <div class="container">
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
     
 
  

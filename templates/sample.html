@@ -37,19 +37,21 @@
             <table class="table table-dark table-hover" >
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">Token Number</th>
                     <th scope="col">First</th>
                     <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">date</th>
+                    <th scope="col">time</th>
                   </tr>
                 </thead>
                 <tbody>
                     {% for variable_name in list_variable_name %}
                     <tr>
                         <th scope="row">{{variable_name.variable}}</th>
-                        <td>{{variable_name.variable}}</td>
-                        <td>{{variable_name.variable}}</td>
-                        <td>{{variable_name.variable}}</td>
+                        <td>{{variable_name.fname}}</td>
+                        <td>{{variable_name.lastname}}</td>
+                        <td>{{variable_name.date}}</td>
+                        <td>{{variable_name.time}}</td>
                       </tr>  
                     {% endfor %}
                   

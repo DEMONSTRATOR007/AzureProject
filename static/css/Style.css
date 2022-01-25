@@ -271,6 +271,24 @@ h3{
 
 .Infratructure-col{
     
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.Infratructure2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.Infratructure2-col{
+    
     flex-basis: 45%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -279,15 +297,28 @@ h3{
 
 }
 
+
+.Infratructure2-col img{
+    width: 100%;
+    display: block;
+}
+
 .Infratructure-col img{
     width: 100%;
     display: block;
 }
 
+.Infratructure2-img{
+    
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+}
 .Infratructure-img{
     
     width: 300px;
-    height: 500px;
+    height: 400px;
+    border-radius: 50px;
 }
 
 .layer{

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Family Medicine Practice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/formstyle.css">
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/HealthCheckUpformsubmit" method="POST">
+        <div class="banner">
+          <h1>Health Check-Up Appointment </h1>
+        </div>
+        <br/>
+        <fieldset>
+          <legend>Patient Information</legend>
+          <div class="item">
+            <label for="fname"> First Name<span>*</span></label>
+            <input id="fname" type="text" name="fname" required/>
+          </div>
+          <div class="item">
+            <label for="lname"> Last Name<span>*</span></label>
+            <input id="lname" type="text" name="lname" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Contact Number 1<span>*</span></label>
+            <input id="phone" type="number"   name="phone1" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Contact Number 2<span>*</span></label>
+            <input id="phone" type="number"   name="phone2" required/>
+          </div>
+          <div class="item">
+            <label for="bdate">Birth Date <span>*</span></label>
+            <input id="bdate" type="date" name="bdate" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="question">
+            <label>Is this your first visit to our offices?</label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" name="visit" value="yes" id="radio_1" />
+                <label for="radio_1" class="radio"  ><span>Yes</span></label>
+              </div>
+              <div>
+                <input  type="radio" name="visit" value="no" id="radio_2" />
+                <label for="radio_2" class="radio" ><span>No</span></label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <br/>
+        <fieldset>
+          <legend>Appointment Information</legend>
+          <div class="item">
+            <label for="date">Date<span>*</span></label>
+            <input id="date" type="date" name="date" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="item">
+            <p>Time</p>
+            <select name = "visit_time">
+              <option  selected value="" disabled selected ></option>
+              <option value="9:00 a.m - 12:00 p.m" >Morning (9:00 a.m - 12:00 p.m)</option>
+              <option value="12:00 p.m - 3:00 p.m">Afternoon (12:00 p.m - 3:00 p.m)</option>
+              <option  value="4:00 p.m - 7:00 pm">Evening (4:00 p.m - 7:00 pm)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>Preferred Physician</label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" value="Dr. R.Patel" id="radio_1" name="physician"/>
+                <label for="radio_1" class="radio"><span>Dr. R.Patel</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="Dr. P.Kumar" id="radio_3" name="physician"/>
+                <label for="radio_3" class="radio"><span>Dr. P.Kumar</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="Dr. M.Singh" id="radio_4" name="physician"/>
+                <label for="radio_4" class="radio"><span>Dr. M.Singh</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="Dr. E.Rastogi" id="radio_5" name="physician"/>
+                <label for="radio_5" class="radio"><span>Dr. E.Rastogi</span></label>
+              </div>
+              <div>
+                <input  type="radio" value="No preference" id="radio_6" name="physician"/>
+                <label for="radio_6" class="radio"><span>No preference</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <label for="instructions">Please describe the reason for this visit </label>
+            <textarea id="instructions" rows="3" name = "reason_for_visit"></textarea>
+          </div>
+        </fieldset>
+        <div class="btn-block">
+          <button type="submit" >Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

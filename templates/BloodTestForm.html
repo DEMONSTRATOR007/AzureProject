@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Family Medicine Practice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/formstyle.css">
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="/BloodTestformsubmit" method="POST">
+        <div class="banner-bloodtest">
+          <h1>Blood Test </h1>
+        </div>
+        <br/>
+        <fieldset>
+          <legend>Patient Information</legend>
+          <div class="item">
+            <label for="fname"> First Name<span>*</span></label>
+            <input id="fname" type="text" name="fname" required/>
+          </div>
+          <div class="item">
+            <label for="lname"> Last Name<span>*</span></label>
+            <input id="lname" type="text" name="lname" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Contact Number 1<span>*</span></label>
+            <input id="phone" type="number"   name="phone1" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Contact Number 2<span>*</span></label>
+            <input id="phone" type="number"   name="phone2" required/>
+          </div>
+          <div class="item">
+            <label for="bdate">Birth Date <span>*</span></label>
+            <input id="bdate" type="date" name="bdate" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="question">
+            <label>Is this your first time getting on-door blood test from us?</label>
+            <div class="question-answer">
+              <div>
+                <input type="radio" name="visit" value="yes" id="radio_1" />
+                <label for="radio_1" class="radio"  ><span>Yes</span></label>
+              </div>
+              <div>
+                <input  type="radio" name="visit" value="no" id="radio_2" />
+                <label for="radio_2" class="radio" ><span>No</span></label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <br/>
+        <fieldset>
+          <legend>Blood Sample time Information</legend>
+          <div class="item">
+            <label for="date">Date<span>*</span></label>
+            <input id="date" type="date" name="date" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="item" >
+            <p>Time</p>
+            <select name = "visit_time">
+              <option  selected value="" disabled selected ></option>
+              <option value="9:00 a.m - 12:00 p.m" >Morning (9:00 a.m - 12:00 p.m)</option>
+              <option value="12:00 p.m - 3:00 p.m">Afternoon (12:00 p.m - 3:00 p.m)</option>
+              <option  value="4:00 p.m - 7:00 pm">Evening (4:00 p.m - 7:00 pm)</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="instructions">Address<span>*</span> </label>
+            <textarea id="instructions" rows="3" name="address" required></textarea>
+          </div>
+          <div class="item">
+            <label for="fname"> State<span>*</span></label>
+            <input id="fname" type="text" name="state" required/>
+          </div>
+          <div class="item">
+            <label for="lname"> City<span>*</span></label>
+            <input id="lname" type="text" name="City" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Pin Code<span>*</span></label>
+            <input id="phone" type="number"   name="pincode" required/>
+          </div>
+        </fieldset>
+        <div class="btn-block">
+          <button type="submit" >Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

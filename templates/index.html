@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN HEALTHCARE|Home </title>
+    <link rel="stylesheet" href="../static/css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/491ca79f60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="{{ url_for ('index')}}"><img class="section-logo" src="../static/Images/LOGO.jpeg" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                        <li><a href="{{ url_for ('index')}}">HOME</a></li>
+                        
+                        <li><a href="{{ url_for ('appointment')}}">APPOINTMENT</a></li>
+                        <li><a href="{{ url_for ('documents')}}">HOSPITAL DOCUMENT</a></li>
+                        
+                </ul>
+                
+            </div>
+            <i class="fas fa-bars fa-lg" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="text-box">
+            <h1>GREEN HEALTHCARE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure harum alias minima, veritatis animi quaerat temporibus nihil error, ad, reprehenderit iste vero nam. Sit ducimus soluta repellat optio omnis?</p>
+        <a href="" class="Hospital-btn1">Visit Us To Know More</a>
+        </div>
+
+
+    </section> 
+    
+    <!------- service ----->
+
+    <section class="Services">
+        <h1>SERVICES</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe temporibus eligendi consequatur deserunt iste cum sed doloremque. Mollitia, iure. Suscipit.</p>
+        
+        <div class="row">
+            <div class="service-col">
+                <h3>APPOINTMENT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ratione? Molestias, repellat! Sit consequuntur, maiores quidem dolores molestiae natus vel.</p>
+            </div>
+
+            <div class="service-col">
+                <h3>BLOOD TEST</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ratione? Molestias, repellat! Sit consequuntur, maiores quidem dolores molestiae natus vel.</p>
+            </div>
+
+            <div class="service-col">
+                <h3>HEALTH DOCUMENTS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ratione? Molestias, repellat! Sit consequuntur, maiores quidem dolores molestiae natus vel.</p>
+            </div>
+
+        </div>
+    
+    
+    
+    </section>
+
+    <!--------Infratructure------>
+    <section class="Infratructure">
+        <h1>Our Facilities </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, cupiditate!
+        </p>
+
+        <div class="row">
+            <div class="Infratructure-col">
+                <img class="Infratructure-img" src="../static/Images/bed-g2f6753f4e_1920.jpg" alt="bed">
+                <div class="layer">
+                    <h3>BEDS</h3>
+                 </div>            
+            </div>
+            <div class="Infratructure-col">
+                <img class="Infratructure-img" src="../static/Images/bed-g2f6753f4e_1920.jpg" alt="bed">
+                <div class="layer">
+                    <h3>BEDS</h3>
+                 </div>            
+            </div>
+            <div class="Infratructure-col">
+                <img class="Infratructure-img" src="../static/Images/bed-g2f6753f4e_1920.jpg" alt="bed">
+                <div class="layer">
+                    <h3>BEDS</h3>
+                 </div>            
+            </div>
+            
+        </div>
+
+
+    </section>
+
+    <!-- EXTRA -->
+
+    <section class="extra1">
+        <h1>Extra</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, recusandae!</p>
+
+        <div class="row">
+            <div class="extra-col">
+                <img src="../static/Images/analysis-g4dc3ccdf0_1280.jpg" alt="">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aperiam deleniti esse tempora culpa dolorum eligendi libero quia voluptatum neque!</p>
+
+            </div>
+            <div class="extra-col">
+                <img src="../static/Images/analysis-g4dc3ccdf0_1280.jpg" alt="">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aperiam deleniti esse tempora culpa dolorum eligendi libero quia voluptatum neque!</p>
+
+            </div>
+            <div class="extra-col">
+                <img src="../static/Images/analysis-g4dc3ccdf0_1280.jpg" alt="">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aperiam deleniti esse tempora culpa dolorum eligendi libero quia voluptatum neque!</p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- testimonials-->
+
+    <section class="testimonials">
+        <h1> What Our Patients Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, reprehenderit!</p>
+        
+        <div class="row">
+
+            <div class="testimonials-col">
+                <img src="../static/Images/surgery-gbd00e1497_1280.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid aspernatur quasi tempora? Optio libero odit facilis tempora doloribus odio suscipit assumenda rem, iusto facere obcaecati expedita praesentium nam quis nobis at reprehenderit veniam voluptas? Nam dolore consectetur omnis eveniet excepturi quia! Asperiores porro similique illo officiis ipsam laboriosam blanditiis?</p>
+                    <h3>Chris abc</h3>                
+                </div>
+
+            </div>
+            <div class="testimonials-col">
+                <img src="../static/Images/surgery-gbd00e1497_1280.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid aspernatur quasi tempora? Optio libero odit facilis tempora doloribus odio suscipit assumenda rem, iusto facere obcaecati expedita praesentium nam quis nobis at reprehenderit veniam voluptas? Nam dolore consectetur omnis eveniet excepturi quia! Asperiores porro similique illo officiis ipsam laboriosam blanditiis?</p>
+                    <h3>Chris abc</h3>                
+                </div>
+
+            </div>
+
+        </div>
+    
+    </section>
+
+    <!-- call to action -->
+
+    <section class="cta">
+        <h1>APPOINTMENT</h1>
+        <a href="" class="Hospital-btn1">CONTACT US</a>
+
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer" id="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Consequatur quae vel, facere at consectetur quam excepturi iusto similique aliquid quis!</p>
+
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+
+
+    <!--------JavaScript for Toggle Menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+
+
+    </script>
+</body>
+</html>

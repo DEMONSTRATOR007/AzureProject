@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/popup.css">
+    <link rel="stylesheet" href="../static/css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/491ca79f60.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <div class="text-box-thank-you-page">
+            <h1>Thank You</h1>
+            <img src="../static/Images/LOGO.jpeg" alt="">
+            <p> Please click below to check details</p>
+            <div class="popup center">
+                <div class="icon">
+                    {{sno}}
+                </div>
+                <div class="title">
+                    Token NO.
+                </div>
+                <div class="description">
+                    {{fname}} you have booked a home visit bloodtest with following details: <br> 
+                    date: {{date}}
+                    <br> time: {{visit_time}}
+                    <br> address: {{address}}<br> Thank you </div>
+
+                <div class="dismiss-btn">
+                    <a href="{{ url_for ('index')}}" class="Hospital-btn1"> Return to Home page</a>
+        
+                </div>
+                </div>
+                <div class="center">
+                    <button id="open-popup-btn" class="Hospital-btn1">
+                       CHECK HERE FOR TOKEN NUMBER
+                    </button> </div>
+        
+        </div>
+
+
+    </section> 
+  
+    <!-- {{fname}} {{lname}} {{phone1}} {{phone2}} {{physician}} {{visit_time}} {{visit}} {{bdate}} {{reason_for_visit}} {{date}} -->
+
+     <script>
+         document.getElementById("open-popup-btn").addEventListener("click",function(){
+    document.getElementsByClassName("popup")
+    [0].classList.add("active");
+});
+
+document.getElementById("dismiss-popup-btn").addEventListener("click",function(){
+    document.getElementsByClassName("popup")
+    [0].classList.remove("active");
+});
+     </script>
+</body>
+</html>
+
